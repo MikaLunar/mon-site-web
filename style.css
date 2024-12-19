@@ -1,0 +1,379 @@
+
+body{font-family: Arial, Helvetica, sans-serif;
+    color: white;
+margin: 0px;
+padding: 0px;
+margin-left: auto;
+margin-right: auto;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.cinzel-decorative-bold {
+    font-family: "Cinzel Decorative", serif;
+    font-weight: 500;
+    font-style:normal;
+  }
+
+h1 {
+    color: rgb(255, 255, 255);
+    font-family: 'Cinzel Decorative';
+    font-size: 50pt;
+    text-transform: uppercase;
+    margin-bottom: -20px;
+    margin-top: 70px;
+
+}
+
+h2{
+    font-weight: 600px;
+    font-size: 28pt;
+    color: #DCB0A9;
+    width: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+    padding-top: 80px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding-bottom: 50px;
+
+}
+
+h3{
+    font-family: 'Courier New', Courier, monospace;
+    color:  #DCB0A9;
+    text-transform: uppercase;
+    padding-bottom: 80px;
+    font-size: 20pt;
+    font-weight: 300;
+}
+
+h4{
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    font-weight:800;
+    font-size: 14pt;
+    padding-top: 20px;
+    margin-bottom: -35px;
+}
+
+h5{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(255, 255, 255);
+    font-weight:800;
+    font-size: 14pt;
+
+}
+
+h6 {
+    font-family: 'Courier New', Courier, monospace;
+    color: black; /* Schwarze Schriftfarbe */
+    font-weight: 800;
+    font-size: 14pt;
+    margin-top: -20px;
+    margin-bottom: 5px; /* Optional: Abstand nach unten */
+}
+
+/* Stil für .description2, basierend auf .description, aber in Schwarz */
+.description2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 200;
+    font-size: 11pt;
+    color: black; /* Schwarze Schriftfarbe */
+    line-height: 1.5; /* Optional: für bessere Lesbarkeit */
+    margin-top: 0px;
+    
+}
+
+p{
+    font-family: 'Roboto';
+    font-weight: 200;
+}
+.roboto-light {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 11pt;
+  }
+
+  .apropos-text {
+    line-height: 1.8;
+    text-align: center;
+  }
+
+  .salut1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.8;
+  }
+
+  .découverte {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 12pt;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.8;
+  }
+
+  .description {
+    font-size: 11pt;
+    font-weight: 200;
+    margin-top: -20px;
+    line-height: 1.4;
+  }
+
+header {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+
+
+article{
+    background-image: url('assets/BeigeBackground.jpg');
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 620px;
+}
+article p{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+    
+}
+section{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+section.mosaique {
+    background-image: url('assets/BeigeBackground.jpg');
+
+}
+
+/*footer{
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    height: 100px;
+    color: white;
+    padding-top: 20px;
+   
+}*/
+
+.books-container {
+    position: relative;
+    width: 345px;
+    height: auto;
+    overflow: hidden;
+}
+
+.books-container img {
+    width: 95%;
+    height: auto;
+    transition: opacity 0.3s ease; /* Weicher Übergang */
+}
+
+.books-container img.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Hover-Bild ausblenden */
+}
+
+.books-container:hover img.hover-image {
+    opacity: 1; /* Hover-Bild einblenden */
+}
+
+.books-container:hover img.default-image {
+    opacity: 0; /* Originalbild ausblenden */
+}
+
+
+.agence-container {
+    position: relative;
+    width: 345px;
+    height: auto;
+    overflow: hidden;
+}
+
+.agence-container img {
+    width: 95%;
+    height: auto;
+    transition: opacity 0.3s ease; /* Weicher Übergang */
+}
+
+.agence-container img.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Hover-Bild ausblenden */
+}
+
+.agence-container:hover img.hover-image {
+    opacity: 1; /* Hover-Bild einblenden */
+}
+
+.agence-container:hover img.default-image {
+    opacity: 0; /* Originalbild ausblenden */
+}
+
+.mediapublishing1-container {
+    position: relative;
+    width: 345px;
+    height: auto;
+    overflow: hidden;
+}
+
+.mediapublishing1-container img {
+    width: 95%;
+    height: auto;
+    transition: opacity 0.3s ease; /* Weicher Übergang */
+}
+
+.mediapublishing1-container img.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Hover-Bild ausblenden */
+}
+
+.mediapublishing1-container:hover img.hover-image {
+    opacity: 1; /* Hover-Bild einblenden */
+}
+
+.mediapublishing1-container:hover img.default-image {
+    opacity: 0; /* Originalbild ausblenden */
+}
+
+.marketing-container {
+    position: relative;
+    width: 345px;
+    height: auto;
+    overflow: hidden;
+}
+
+.marketing-container img {
+    width: 95%;
+    height: auto;
+    transition: opacity 0.3s ease; /* Weicher Übergang */
+}
+
+.marketing-container img.hover-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0; /* Hover-Bild ausblenden */
+}
+
+.marketing-container:hover img.hover-image {
+    opacity: 1; /* Hover-Bild einblenden */
+}
+
+.marketing-container:hover img.default-image {
+    opacity: 0; /* Originalbild ausblenden */
+}
+
+
+
+
+footer {
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px; /* optional: etwas Abstand unten für bessere Lesbarkeit */
+    color: #DCB0A9;
+}
+
+footer p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300; /* Roboto Light */
+    font-size: 9pt; /* Schriftgröße auf 9pt setzen */
+    line-height: 1.5; /* optional: für bessere Lesbarkeit */
+    margin: 5px 0; /* Abstand zwischen den Zeilen */
+}
+
+footer a {
+    color: #DCB0A9; /* Ersetze #DCB0A9 durch die gewünschte Farbe */
+    text-decoration: none; /* entfernt die Unterstreichung des Links */
+}
+
+footer a:hover {
+    color: #ffffff; /* optional: Farbe beim Hover-Effekt ändern */
+    text-decoration: underline; /* optional: Unterstreichung beim Hover */
+}
+
+
+img.logo{
+    height: 300px;
+    width: 300px;
+    padding-top: 50px;
+}
+img.miniature{
+    width: 345px;
+}
+
+.portrait {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+    object-fit: cover; /* stellt sicher, dass das Bild sein Seitenverhältnis beibehält */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.mosaique {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* sorgt dafür, dass die Elemente nicht umbrechen; nochmal nachfragen!! */
+    /*gap: 20px;*/
+    justify-content: space-around;
+
+}
+
+div.mosaique div{
+    width:345px;
+    height: 550px;
+}
+
+
+.video-container {
+    
+    gap: 30px; /* optional: Abstand zwischen den Videos */
+    padding-top: 90px
+}
+
+.video-container iframe {
+   
+   height: 450px;
+   width: 1200px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   
+
+}
+
+.video-container div{
+    margin-bottom: 90px;
+}
+
+
+
+.full-width {
+    position: relative;
+    width: 100dvw;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px;
+
+}
